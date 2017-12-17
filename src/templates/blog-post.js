@@ -11,7 +11,6 @@ export const BlogPostTemplate = ({ content, contentComponent, description, title
         <div className="column is-10 is-offset-1">
           <h1 className="title is-size-2 has-text-weight-bold is-bold-light">{title}</h1>
           <p>{description}</p>
-          <p>{author}</p>
           <PostContent content={content} />
         </div>
       </div>
@@ -38,6 +37,7 @@ export const pageQuery = graphql`
         path
         date(formatString: "MMMM DD, YYYY")
         title
+        author
         description
       }
     }
