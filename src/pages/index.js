@@ -39,6 +39,7 @@ export default class IndexPage extends React.Component {
                   </Link>
                   <span> &bull; </span>
                   <small>{post.frontmatter.date}</small>
+                  <small>{post.frontmatter.author}</small>
                 </p>
                 <p>
                   {post.excerpt}
